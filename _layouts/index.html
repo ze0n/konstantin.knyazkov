@@ -7,17 +7,19 @@ layout: default
 
   {{ content }}
 
+
+  <div class="projects">
   {% for post in paginator.posts %}
 
-  <div class="project-body">
-    <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="img-project"/>
+  <div class="project-body" style="background-size: cover; background-repeat: no-repeat; background-image:  url({{ post.image | prepend: site.baseurl }})">
+    <!-- <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="img-project"/> -->
     <div class="project-content">
       <h2 class="post-title">
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
         </a>
       </h2>
-      {% include post-meta.html post=post %}
+<!--       {% include post-meta.html post=post %}
 
       {% if post.excerpt %}
         {{ post.excerpt }}
@@ -38,8 +40,10 @@ layout: default
           <a href="{{ site.baseurl }}{{ post.url }}">More &hellip;</a>
         {% endif %}
       {% endif %}
+ -->    
     </div>
   </div>
+
 
   <!-- <article class="post-body">
     <h2 class="post-title">
@@ -70,6 +74,9 @@ layout: default
     {% endif %}
   </article> -->
   {% endfor %}
+
+  </div>
+
 
   {% include pagination-older.html %}
 </div>

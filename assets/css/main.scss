@@ -63,9 +63,14 @@ $sidebar-sticky: false;
 
     color: #FFFFFF60;
 
-    -webkit-box-shadow: inset 0px 0px 46px 10px rgba(0,0,0,0.52);
-    -moz-box-shadow: inset 0px 0px 46px 10px rgba(0,0,0,0.52);
-    box-shadow: inset 0px 0px 46px 10px rgba(0,0,0,0.52);
+    // -webkit-box-shadow: inset 0px 0px 46px 10px rgba(0,0,0,0.52);
+    // -moz-box-shadow: inset 0px 0px 46px 10px rgba(0,0,0,0.52);
+    // box-shadow: inset 0px 0px 46px 10px rgba(0,0,0,0.52);
+
+
+    -webkit-box-shadow: inset 0px 0px 46px 10px rgba(1,1,1,0.52);
+    -moz-box-shadow: inset 0px 0px 46px 10px rgba(1,1,1,0.52);
+    box-shadow: inset 0px 0px 46px 10px rgba(1,1,1,0.52);
 
 }
 
@@ -91,7 +96,7 @@ $sidebar-sticky: false;
 .project-content h2.post-title {
     text-align: center;
     vertical-align: middle;
-    line-height: 300px;
+    // line-height: 300px;
 
     font-size: 30px;
 }
@@ -104,7 +109,12 @@ $sidebar-sticky: false;
     color: #FFFFFF;
 }
 
-
+.project-type {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 30px;
+}
 
 .projects {
   display: flex;
@@ -116,9 +126,18 @@ $sidebar-sticky: false;
 
 .content {
     max-width: none !important;
-    background-color: black;
+    // background-color: black;
 }
 
 .container {
-    background-color: black;
+    // background-color: black;
 }
+
+
+mark{
+    background-color: #000000AA; // #ffffffAA;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+

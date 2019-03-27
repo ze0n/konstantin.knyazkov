@@ -1,5 +1,6 @@
 ---
 layout: post
+type: Code Library
 title: Bonjour, CVeetie
 excerpt_separator:  <!--more-->
 categories:

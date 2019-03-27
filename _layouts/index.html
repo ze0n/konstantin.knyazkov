@@ -14,9 +14,12 @@ layout: default
   <div class="project-body" style="background-size: cover; background-repeat: no-repeat; background-image:  url({{ post.image | prepend: site.baseurl }})">
     <!-- <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}" class="img-project"/> -->
     <div class="project-content">
+      <span class="project-type">
+        {{post.type}}
+      </span>
       <h2 class="post-title">
         <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
+          <mark>{{ post.title }}</mark>
         </a>
       </h2>
 <!--       {% include post-meta.html post=post %}

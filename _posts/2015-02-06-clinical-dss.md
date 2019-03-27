@@ -1,13 +1,13 @@
 ---
 layout: post
-type: Lecture
-title: The Python Ecosystem for Data Analysis (Introduction)
+type: Research Project
+title: Clinical DSS
 categories:
  - Teach
  - Visualize
-image: /assets/images/python.jpg
+image: /assets/images/clinic.png
 ---
 
-5D interactive movie
+Clinical DSS
 
 [Sources on GitHub](https://github.com/ze0n/publications/tree/master/Courses/Scientific%20Visualization%20(%20ITMO%20University%2C%20in%20russian%20))
